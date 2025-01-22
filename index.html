@@ -1,0 +1,1692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0" />
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui" />
+    <meta name="theme-color" content="#fb6c24" />
+    <meta name="msapplication-navbutton-color" content="#fb6c24" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fb6c24" />
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    <!-- <style>
+        img:is([sizes="auto" i], [sizes^="auto," i]) {
+            contain-intrinsic-size: 3000px 1500px
+        }
+    </style> -->
+
+    <!-- External CSS for JoinChat -->
+    <link rel="stylesheet"
+        href="https://www.messemasters.com/wp-content/plugins/creame-whatsapp-me/public/css/joinchat.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+
+    <link rel="stylesheet" href="input.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth !important;
+        }
+    </style>
+    <!-- Include Swiper.js CSS and JS -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <!-- Include Fancybox CSS and JS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script> -->
+
+</head>
+
+<body>
+    <!-- Header-Section -->
+    <header class="sticky top-0 z-50">
+        <!-- Top-Bar -->
+        <div class="top-bar hidden lg:flex py-2 justify-between px-5 items-center bg-black">
+
+            <div class="text-white">
+                <p class="text-sm">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i> Mon to Fri 9:00 am to 6:00 pm
+                </p>
+            </div>
+            <div class="flex gap-10 text-sm">
+                <div class="px-4">
+                    <div class="hover:scale-105 transition-all duration-300">
+                        <a href="#"
+                            class="relative requestQuoteBtn text-white rounded-full transition-all duration-700  shadow-md shadow-[#FFCC00] hover:bg-[#FFCC00] px-5 py-1 text-sm overflow-hidden">
+                            Request A Quote <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="px-4">
+                    <address class="flex gap-5">
+                        <div class="text-white ">
+                            <i class="fa fa-phone"></i>
+                            <a href="tel:+48616255501" target="_blank" rel="noopener noreferrer">
+                                <phone>
+                                    <bold>+48 61 625 5501
+                                    </bold>
+                                </phone>
+                            </a>
+                        </div>
+
+                        <div class="text-white ">
+                            <i class="fa fa-envelope "></i>
+                            <a href="mailto:enquiry@smart-floorings.com" target="_blank" rel="noopener noreferrer">
+                                <email>
+                                    enquiry@smart-floorings.com
+                                </email>
+                            </a>
+                        </div>
+                    </address>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom-Bar -->
+        <div class="bottom-bar">
+            <div class=" px-5 md:px-10 flex justify-between">
+
+                <div class="navbar-brand">
+                    <a href="/">
+                        <img src="/images/smart-flooring.png" alt="logo" width="100" class="logo_image p-2">
+                    </a>
+                </div>
+
+                <nav class="navbar">
+                    <ul class="navbar-nav text-base gap-4">
+
+                        <li class="nav-item">
+                            <a href="/" class=" text-black">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="/about-us" class=" text-black">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            Application <i class="fa fa-sort-down"></i>
+                            <div class="dropdown">
+                                <ul class="border-r-2 border-orange-500 pr-28 mr-5">
+                                    <li class="nav-item">
+                                        <a href="/industrial-flooring" class="nav-link">
+                                            Industrial flooring
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/labs-office-flooring" class="nav-link">
+                                            Laboratory flooring solutions|office flooring
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/garage-flooring" class="nav-link">
+                                            Garage Flooring
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/showroom-flooring" class="nav-link">
+                                            Showroom flooring
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/warehouse-flooring" class="nav-link">
+                                            warehouse flooring
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/sports-gym" class="nav-link">
+                                            Sports & Gym
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/retail-commercial" class="nav-link">
+                                            Retail & Commercial
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/electrostatic-dissipative-esd-flooring" class="nav-link">
+                                            Electrostatic Dissipative (ESD) Flooring
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <!-- Form-section -->
+                                <div class="bg-[#e4e2e1] w-[450px]">
+                                    <div>
+                                        <p class="text-2xl text-yellow-700 p-5 py-10">
+                                            Call Today to Speak one of our Flooring Expert
+                                        </p>
+                                    </div>
+                                    <div class="text-2xl border-b pb-5 border-black mx-5">
+                                        <i class="fa fa-phone"></i>
+                                        <a href="tel:+48616255501" target="_blank" rel="noopener noreferrer">
+                                            <phone>
+                                                +48 61 625 5501
+                                            </phone>
+                                        </a>
+                                    </div>
+
+                                    <div class="p-4 flex flex-col gap-5">
+                                        <div class="w-[400px]">
+                                            <a href="/exhibit_search"
+                                                class="flex justify-center items-center gap-2 text-white bg-[#434242] hover:bg-[#FFCC00] rounded-full duration-700 px-5 py-3 text-sm overflow-hidden ">
+                                                Request A Quote <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="w-[400px]">
+                                            <a href="/exhibit_search"
+                                                class="flex justify-center items-center gap-2 text-white bg-[#434242] hover:bg-[#FFCC00] rounded-full duration-700 px-5 py-3 text-sm overflow-hidden ">
+                                                Download Brochure <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End of Form section -->
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            Products <i class="fa fa-sort-down"></i>
+
+                            <div class="dropdown">
+                                <ul class="border-r-2 border-orange-500 pr-28 mr-5">
+                                    <li class="nav-item">
+                                        <a href="/product" class="nav-link">
+                                            All Products
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/product/e500-7mm-tiles-smooth" class="nav-link">
+                                            E500 7mm Tiles Smooth
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/product/x500-10-ultra-heavy-duty-floor-tile" class="nav-link">
+                                            X500/10 Ultra Heavy Duty Floor Tile
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/product/e500-7mm-raised-disc" class="nav-link">
+                                            E500 7mm Raised Disc
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/product/esd-anti-static-flooring" class="nav-link">
+                                            ESD/Anti-Static Flooring
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/product/7mm-anti-fatigue-floor-tile" class="nav-link">
+                                            7mm Anti-Fatigue Floor Tile
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/product/r500-recycled-floor-tile" class="nav-link">
+                                            R500 Recycled Floor Tile
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/product/floor-markings-signs-logos" class="nav-link">
+                                            Floor Markings, Signs & Logos
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <!-- Form-section -->
+                                <div class="bg-[#e4e2e1] w-[450px]">
+                                    <div>
+                                        <p class="text-2xl text-yellow-700 p-5 py-10">
+                                            Call Today to Speak one of our Flooring Expert
+                                        </p>
+                                    </div>
+                                    <div class="text-2xl border-b pb-5 border-black mx-5">
+                                        <i class="fa fa-phone"></i>
+                                        <a href="tel:+48616255501" target="_blank" rel="noopener noreferrer">
+                                            <phone>
+                                                +48 61 625 5501
+                                            </phone>
+                                        </a>
+                                    </div>
+
+                                    <div class="p-4 flex flex-col gap-5">
+                                        <div class="w-[400px]">
+                                            <a href="#"
+                                                class="flex justify-center items-center gap-2 text-white bg-[#434242] hover:bg-[#FFCC00] rounded-full duration-700 px-5 py-3 text-sm overflow-hidden ">
+                                                Request A Quote <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="w-[400px]">
+                                            <a href="#"
+                                                class="flex justify-center items-center gap-2 text-white bg-[#434242] hover:bg-[#FFCC00] rounded-full duration-700 px-5 py-3 text-sm overflow-hidden ">
+                                                Download Brochure <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="w-[400px]">
+                                            <a href="#"
+                                                class="flex justify-center items-center gap-2 text-white bg-[#434242] hover:bg-[#FFCC00] rounded-full duration-700 px-5 py-3 text-sm overflow-hidden ">
+                                                Request a Free Sample <i class="fa fa-arrow-right"
+                                                    aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- End of Form section -->
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="/buy-direct" class=" text-black ">
+                                Buy Direct
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            Support <i class="fa fa-sort-down"></i>
+                            <div class="dropdown">
+                                <ul class="border-r-2 border-orange-500 pr-28 mr-5">
+                                    <li class="nav-item">
+                                        <a href="/smart-flooring-product-faqs" class="nav-link">Smart Flooring product
+                                            FAQs</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/installation-faqs" class="nav-link">Installation FAQs</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="/how-do-we-recycle-smart-flooring" class="nav-link">How do we Recycle
+                                            Smart
+                                            Flooring </a>
+                                    </li>
+                                </ul>
+
+                                <!-- Form-section -->
+                                <div class="bg-[#e4e2e1] w-[450px]">
+                                    <div>
+                                        <p class="text-2xl text-yellow-700 p-5 py-10">
+                                            Call Today to Speak one of our Flooring Expert
+                                        </p>
+                                    </div>
+                                    <div class="text-2xl border-b pb-5 border-black mx-5">
+                                        <i class="fa fa-phone"></i>
+                                        <a href="tel:+48616255501" target="_blank" rel="noopener noreferrer">
+                                            <phone>
+                                                +48 61 625 5501
+                                            </phone>
+                                        </a>
+                                    </div>
+
+                                    <div class="p-4 flex flex-col gap-5">
+                                        <div class="w-[400px]">
+                                            <a href="/exhibit_search"
+                                                class="flex justify-center items-center gap-2 text-white bg-[#434242] hover:bg-[#FFCC00] rounded-full duration-700 px-5 py-3 text-sm overflow-hidden ">
+                                                Request A Quote <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="w-[400px]">
+                                            <a href="/exhibit_search"
+                                                class="flex justify-center items-center gap-2 text-white bg-[#434242] hover:bg-[#FFCC00] rounded-full duration-700 px-5 py-3 text-sm overflow-hidden ">
+                                                Download Brochure <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="w-[400px]">
+                                            <a href="/exhibit_search"
+                                                class="flex justify-center items-center gap-2 text-white bg-[#434242] hover:bg-[#FFCC00] rounded-full duration-700 px-5 py-3 text-sm overflow-hidden ">
+                                                Request a Free Sample <i class="fa fa-arrow-right"
+                                                    aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End of Form section -->
+                            </div>
+
+                        </li>
+                        <li class="nav-item">
+                            <a href="/blogs" class=" text-black ">
+                                Blogs
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="/contact-us" class=" text-black ">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+
+                    <button id="hamburger" class="lg:hidden text-3xl focus:outline-none" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden  p-4 rounded-md h-screen border-t-2 border-[#FFCC00]">
+            <ul class="flex flex-col gap-4">
+                <li><a href="/" class="">Home</a></li>
+                <li><a href="#" class="">About Us</a></li>
+                <li>
+                    <button class="flex justify-between w-full items-center dropdown-toggle" id="applications-toggle">
+                        Applications <i class="fa fa-sort-down"></i>
+                    </button>
+                    <ul class="hidden dropdown mt-2 ml-4" id="services-dropdown">
+                        <li><a href="/industrial-flooring" class="block py-2 ">Industrial flooring</a>
+                        </li>
+                        <li><a href="/labs-office-flooring" class="block py-2 ">Laboratory flooring
+                                solutions|office flooring</a></li>
+                        <li><a href="/garage-flooring" class="block py-2 ">Garage Flooring</a></li>
+                        <li><a href="/showroom-flooring" class="block py-2 ">Showroom flooring</a></li>
+                        <li><a href="/warehouse-flooring" class="block py-2 ">warehouse flooring</a></li>
+                        <li><a href="/sports-gym" class="block py-2 ">Sports & Gym</a></li>
+                        <li><a href="/retail-commercial" class="block py-2 ">Retail & Commercial</a></li>
+                        <li><a href="/electrostatic-dissipative-esd-flooring" class="block py-2 ">Electrostatic
+                                Dissipative (ESD) Flooring
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="flex justify-between w-full items-center  dropdown-toggle" id="products-toggle">
+                        Products <i class="fa fa-sort-down"></i>
+                    </button>
+                    <ul class="hidden dropdown mt-2 ml-4" id="content-hub-dropdown">
+                        <li class="nav-item"><a href="/product" class="block py-2 ">All Products</a></li>
+                        <li class="nav-item"><a href="/product/e500-7mm-tiles-smooth" class="block py-2 ">E500 7mm Tiles
+                                Smooth</a></li>
+                        <li class="nav-item"><a href="/product/x500-10-ultra-heavy-duty-floor-tile"
+                                class="block py-2 ">X500/10 Ultra Heavy Duty Floor Tile</a>
+                        </li>
+                        <li class="nav-item"><a href="/product/e500-7mm-raised-disc" class="block py-2 ">E500 7mm Raised
+                                Disc</a>
+                        </li>
+                        <li class="nav-item"><a href="/product/esd-anti-static-flooring"
+                                class="block py-2 ">ESD/Anti-Static Flooring</a>
+                        </li>
+                        <li class="nav-item"><a href="/product/7mm-anti-fatigue-floor-tile" class="block py-2 ">7mm
+                                Anti-Fatigue Floor Tile</a></li>
+                        <li class="nav-item"><a href="/product/r500-recycled-floor-tile" class="block py-2 ">R500
+                                Recycled Floor Tile</a></li>
+                        <li class="nav-item"><a href="/product/floor-markings-signs-logos" class="block py-2 "> Floor
+                                Markings, Signs & Logos</a></li>
+                    </ul>
+                </li>
+                <li><a href="/buy-direct" class="">Buy Direct</a></li>
+                <li>
+                    <button class="flex justify-between w-full items-center  dropdown-toggle" id="products-toggle">
+                        Support <i class="fa fa-sort-down"></i>
+                    </button>
+                    <ul class="hidden dropdown mt-2 ml-4" id="content-hub-dropdown">
+                        <li class="nav-item"><a href="/smart-flooring-product-faqs" class="block py-2 ">Smart Flooring
+                                product FAQs</a></li>
+                        <li class="nav-item"><a href="/installation-faqs" class="block py-2 ">Installation
+                                FAQs</a></li>
+                        <li class="nav-item"><a href="/how-do-we-recycle-smart-flooring" class="block py-2 ">How do we
+                                Recycle Smart Flooring</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="/blogs" class="">Blogs</a></li>
+                <li><a href="/contact-us" class="">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- End of Header-Section -->
+
+    <!-- Banner-Section -->
+    <section>
+        <div class="relative w-full h-[300px] md:h-[400px] lg:h-[500px]">
+            <img src="./images/home-banner/colours-1.webp"
+                class="absolute inset-0 w-full h-full object-cover text-white bg-orange-600/30" />
+            <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/30">
+                <h1 class="text-white text-base md:text-xl lg:text-2xl text-center w-[80%]">Step into the Future of
+                    Flooring</h1>
+                <p class="mt-4 text-xl md:text-3xl lg:text-5xl xl:text-6xl text-white text-center w-[80%]">Smart
+                    Floorings <br class="lg:block" /> Solutions</p>
+                <div class="mt-10">
+                    <a href="#"
+                        class="requestQuoteBtn text-white bg-[#2B2A29] rounded-full px-7 py-3 text-sm md:text-lg shadow-md shadow-yellow-500 hover:bg-black transition-all">
+                        Request A Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Section -->
+    <div id="quoteModal" class="fixed inset-0 hidden z-50 bg-black/50 flex items-center justify-center">
+        <div class="relative w-full max-w-lg text-black p-6 m-5 my-10 rounded-lg shadow-lg"
+            style="background-image: url('./images/bg-image/colours-1.webp');">
+            <!-- Close Button -->
+            <button id="closeModalBtn" aria-label="Close modal"
+                class="absolute text-3xl top-5 right-5 font-bold text-white hover:text-gray-800">&times;</button>
+            <!-- Form Content -->
+            <h2 class="text-xl lg:text-2xl xl:text-3xl font-bold mb-4 text-center text-white">Request a free
+                Quote!</h2>
+
+            <form id="contact-form" action="/submit" method="POST" enctype="multipart/form-data">
+                <!-- First Row -->
+                <div class="flex flex-col md:flex-row gap-2">
+                    <div class="w-full">
+                        <div class="relative mt-1">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                                <i class="fa fa-user-o" aria-hidden="true"></i>
+                            </span>
+                            <input id="name" name="quform_1_16" type="text" placeholder="Name" required
+                                class="block w-full pl-8 pr-3 py-2 border-2 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <div class="relative mt-1">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            </span>
+                            <input id="phone" name="quform_1_17" type="tel" placeholder="Phone Number" required
+                                class="block w-full pl-8 pr-3 py-2 border-2 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Row -->
+                <div class="flex flex-col md:flex-row gap-2 mt-2">
+                    <div class="w-full">
+                        <div class="relative mt-1">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                                <i class="fa fa-envelope-o"></i>
+                            </span>
+                            <input id="email" name="quform_1_8" type="email" placeholder="Email" required
+                                class="block w-full pl-8 pr-3 py-2 border-2  border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third Row -->
+                <div class="flex flex-col md:flex-row gap-2 mt-2">
+                    <div class="w-full">
+                        <div class="relative mt-1">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                                <i class="fa fa-building-o" aria-hidden="true"></i>
+                            </span>
+                            <input id="company" name="quform_1_18" type="text" placeholder="Company Name" required
+                                class="block w-full pl-8 pr-3 py-2 border-2 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <div class="relative mt-1">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                                <i class="fa fa-gift"></i>
+                            </span>
+                            <input id="execution" name="quform_1_21" type="text" placeholder="Approximate Floor Area"
+                                required
+                                class="block w-full pl-8 pr-3 py-2 border-2 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Browse Button -->
+                <!-- <div class="mt-4">
+                    <input id="file" name="quform_1_24[]" type="file" accept=".jpg,.jpeg,.png,.pdf"
+                        class="file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-[#FECC09] file:text-white hover:file:bg-[#fc8143] cursor-pointer" />
+                </div> -->
+
+                <!-- Message Section -->
+                <div class="mt-2">
+                    <textarea id="message" name="quform_1_29" rows="4" required
+                        class="mt-1 p-2 block w-full border-2 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                        placeholder="Message..."></textarea>
+                </div>
+
+                <!-- Radio Button Section -->
+                <div class="mt-2 p-2 border-2 bg-white border-gray-300 rounded-md shadow-sm ">
+                    <div class="flex items-center gap-4">
+                        <div class="flex gap-2">
+                            <input id="callback" name="contact_method" type="radio" value="callback" required
+                                class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500" />
+                            <label for="callback" class="ml-2 block text-sm text-gray-700">I'd like a callback</label>
+                        </div>
+                        <div class="flex gap-2">
+                            <input id="email" name="contact_method" type="radio" value="email"
+                                class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500" />
+                            <label for="email" class="ml-2 block text-sm text-gray-700">I'd like to be emailed</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Captcha and Send Button -->
+                <div class="flex flex-col md:flex-row gap-2 mt-2">
+                    <div class="mt-2 w-full flex flex-col gap-2">
+                        <input id="captcha" name="quform_1_28" type="text" placeholder="Please type the character"
+                            required
+                            class="block w-full pl-3 pr-3 py-2 border-2 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+                        <div id="captcha-text"
+                            class="w-fit bg-white  border-2 border-gray-300 rounded-md shadow-sm opacity-65 hover:opacity-100 duration-500 text-[#434242] text-center py-1.5 px-4 text-lg font-semibold">
+                        </div>
+                    </div>
+                    <div class="mt-2 w-full">
+                        <button type="submit" aria-label="Submit form"
+                            class="w-full py-2 px-4 bg-[#434242] text-white rounded-md shadow-md hover:bg-black focus:ring-2 focus:ring-[#f88234] focus:ring-offset-2">
+                            Send
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- About-Us Section -->
+    <section class=" p-5 md:p-10 lg:py-20">
+        <hr class="w-[100%] md:w-1/6 h-1 my-2 bg-[#FFCC00]">
+        <p class="text-[#FFCC00] text-lg md:text-xl md:p-5 uppercase">About Us</p>
+        <h2 class="text-2xl lg:text-3xl xl:text-4xl font-semibold md:p-5">Create Smarter Spaces with Smart Floorings
+        </h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
+            <div class=" md:p-5 flex flex-col gap-3">
+                <p class="text-left pb-5">
+                    Smart Floorings is a leading European company for innovative and durable tiles & flooring options.
+                    Our specialty is converting non-industrial as well as industrial areas into fashionable works of art
+                    that balance sustainability, use, beauty, and more. We proudly provide different kinds of flooring
+                    alternatives to meet the demands of commercial, industrial, and residential clients. Our flooring
+                    options include R500 recycled floor tile, ESD/Anti-Static flooring, E500 7mm raised disc, Smooth
+                    E500 7mm tiles, and more. Built to last, our flooring solutions are perfect for various demanding
+                    environments.
+                    <br />
+                    <br />
+                    The tile from Smart Floorings can withstand the hectic nature of the workplace because of our
+                    tenacity & expertise. We place a high value on your space’s functionality, attractiveness, and
+                    environmental responsibility. Whether your area is an office, a house, a showroom, or a sports
+                    complex, we have the ideal solution.
+                </p>
+
+                <a href="/contact-us">
+                    <span
+                        class="relative w-full text-base md:text-lg text-left p-2 px-4 bg-[#2B2A29] hover:bg-[#FFCC00] bg-opacity-70 hover:bg-opacity-100 text-white hover:text-black transition-colors duration-700 ease-in-out ">Read
+                        More <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </div>
+
+            <div class="flex justify-center wow py-5" data-wow-duration="1500ms">
+                <img src="./images/about-us/interlocking-tiles-about-smart-flooring-jpg.webp" alt="about-us"
+                    class="w-full h-full md:w-[75%] md:h-[80%]" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Smart Floorings Section -->
+    <section class="flex flex-col gap-3 p-5 md:p-10 lg:pt-20 bg-[#2B2A29] text-white">
+        <hr class="w-full md:w-1/6 h-1 my-2 bg-[#FFCC00]">
+        <p class="text-[#FFCC00] text-lg md:text-xl md:p-5 uppercase">Smart Floorings</p>
+        <h2 class="text-2xl lg:text-3xl xl:text-4xl font-semibold md:p-5">We are Your Gateway to Innovative & Stylish
+            Flooring Solutions!
+        </h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-stretch border-b">
+            <!-- Video Section -->
+            <div id="video-container" class="flex justify-center items-center py-5 md:p-5">
+                <iframe id="video-player" class="w-full h-full aspect-video lg:max-h-[500px] lg:max-w-[500px]"
+                    src="https://www.youtube.com/embed/oGuBAzOS1-8" allow="autoplay; encrypted-media; gyroscope;"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <!-- Content Section -->
+            <div class="md:p-5 flex flex-col gap-3 justify-center">
+                <p class="text-left pb-5">
+                    Smart Floorings guarantees the best flooring options that come with easy installation methods. You
+                    can use it with ease because it works well in industrial & non-industrial settings. Our interlocking
+                    tiles are a low-maintenance and cost-effective solution to a variety of flooring concerns & business
+                    challenges in Europe. Our flooring is perfect for long-term cost savings if we compare it to regular
+                    Epoxy/Polyurethane floorings. There are significant cost savings on repairs and downtime since these
+                    tiles are less likely to be damaged. Our flooring solutions are functional, eye-catching, and
+                    long-lasting for every kind of area. You can bid farewell to the constraints of epoxy resin, floor
+                    paint, conventional industrial flooring, and other types of flooring solutions. Instead, try our
+                    flooring solutions that can improve the appearance and toughness of your floor.
+                </p>
+            </div>
+        </div>
+
+        <p class="text-left py-5 md:p-5">
+            Our unique interlocking PVC tiles can be easily attached to any hard surface. It eliminates the need for
+            specialized equipment, technical expertise, adhesives, etc. Our innovative tile flooring solution throughout
+            Europe eliminates the need to be concerned about cracked, brittle, or broken resin flooring, paint
+            delamination, dust, grime, moisture concerns, and more.
+        </p>
+    </section>
+
+    <!-- choose your product Section -->
+    <section class="p-5 md:p-10 bg-[#2B2A29] text-white">
+        <hr class="w-full md:w-1/6 h-1 my-2 bg-[#FFCC00]">
+        <div class="flex flex-col gap-3 border-b">
+            <p class="text-[#FFCC00] text-lg md:text-xl md:p-5 uppercase">choose your product</p>
+            <div class="flex flex-col md:flex-row gap-10 justify-between items-start md:items-center py-5">
+                <h2 class="text-2xl lg:text-3xl xl:text-4xl font-semibold md:p-5">The Smart Floorings Range
+                </h2>
+                <a href="/product">
+                    <span
+                        class="relative w-full text-base md:text-lg text-left p-2 px-4 bg-[#FFCC00] text-white hover:text-black transition-colors duration-700 ease-in-out ">View
+                        More <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-stretch py-5 md:py-10">
+            <div class="flex flex-col bg-white text-black text-center overflow-hidden">
+                <img src="./images/product-card/E500-7-Disk-Black_Header.webp" alt="choose-your-product"
+                    class="w-full h-60 hover:scale-105 duration-500" />
+                <div class="p-5 md:py-10 lg:pt-16 flex flex-col gap-2">
+                    <img loading="lazy" decoding="async" width="350" height="50"
+                        src="https://www.smart-floorings.com/wp-content/uploads/2024/10/7mm-Colour-Swatches.svg"
+                        class="size-full" alt="8-colours">
+                    <h3 class="text-base md:text-lg xl:text-xl font-semibold">
+                        E500 7mm Raised Disc
+                    </h3>
+                    <p>
+                        These come with a raised disc design that makes it more resistant to slips and falls.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="flex flex-col bg-white text-black text-center overflow-hidden">
+                <img src="./images/product-card/Safety-Floor-Signs-and-Logo-Tiles.webp" alt="choose-your-product"
+                    class="w-full h-60 hover:scale-105 duration-500" />
+                <div class="p-5 md:py-10 lg:pt-16 flex flex-col gap-2">
+                    <img loading="lazy" decoding="async" width="350" height="50"
+                        src="https://www.smart-floorings.com/wp-content/uploads/2024/10/7mm-Colour-Swatches.svg"
+                        class="size-full" alt="8-colours">
+                    <h3 class="text-base md:text-lg xl:text-xl font-semibold">
+                        Floor Markings, Signs & Logos
+                    </h3>
+                    <p>
+                        These are the tiles that feature special markings, safety signs, and brand logos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col bg-white text-black text-center overflow-hidden">
+                <img src="./images/product-card/ESD-floor-3.webp" alt="choose-your-product"
+                    class="w-full h-60 hover:scale-105 duration-500" />
+                <div class="p-5 md:py-10 lg:pt-16 flex flex-col gap-2">
+                    <img loading="lazy" decoding="async" width="350" height="50"
+                        src="https://www.smart-floorings.com/wp-content/uploads/2024/10/ESD-Swatches-1.svg"
+                        class="size-full" alt="8-colours">
+                    <h3 class="text-base md:text-lg xl:text-xl font-semibold">
+
+                        ESD/ Anti-Static Flooring
+                    </h3>
+                    <p>
+
+
+                        ESD/ Anti-Static Flooring are interlocking tiles that create safe flooring for delicate
+                        equipment.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col bg-white text-black text-center overflow-hidden">
+                <img src="./images/product-card/E500-7-Black_Header.webp" alt="choose-your-product"
+                    class="w-full h-60 hover:scale-105 duration-500" />
+                <div class="p-5 md:py-10 lg:pt-16 flex flex-col gap-2">
+
+                    <img loading="lazy" decoding="async" width="350" height="50"
+                        src="https://www.smart-floorings.com/wp-content/uploads/2024/10/Recycled-Swatches.svg"
+                        class="size-full" alt="8-colours">
+
+
+                    <h3 class="text-base md:text-lg xl:text-xl font-semibold">
+
+                        R500 Recycled Floor Tile
+                    </h3>
+                    <p>
+                        It is manufactured using recycled materials, making them perfect for greener workspaces.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col bg-white text-black text-center overflow-hidden">
+                <img src="./images/product-card/X500-10-Header-Imager.webp" alt="choose-your-product"
+                    class="w-full h-60 hover:scale-105 duration-500" />
+                <div class="p-5 md:py-10 lg:pt-20 flex flex-col gap-2">
+
+                    <img loading="lazy" decoding="async" width="350" height="50"
+                        src="https://www.smart-floorings.com/wp-content/uploads/2024/10/10mm-Swatches-2.svg"
+                        class="size-full" alt="8-colours">
+                    <h3 class="text-base md:text-lg xl:text-xl font-semibold">
+                        X500/10mm Ultra Heavy Duty Floor Tile
+                    </h3>
+                    <p>
+                        This is a high-strength tile designed for industrial environments with exceptional demands.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col bg-white text-black text-center overflow-hidden">
+                <img src="./images/product-card/Anti-Fatigue-Floor-Tile.webp" alt="choose-your-product"
+                    class="w-full h-60 hover:scale-105 duration-500" />
+                <div class="p-5 md:py-10 lg:pt-16 flex flex-col gap-2">
+
+                    <img loading="lazy" decoding="async" width="350" height="50"
+                        src="https://www.smart-floorings.com/wp-content/uploads/2024/10/Recycled-Swatches.svg"
+                        class="size-full" alt="8-colours">
+
+
+                    <h3 class="text-base md:text-lg xl:text-xl font-semibold">
+                        7mm Anti-Fatigue Floor Tile
+                    </h3>
+                    <p>
+                        It is a thin, comfortable mat designed to reduce discomfort while standing for extended periods.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col bg-white text-black text-center overflow-hidden">
+                <img src="./images/product-card/E500-7-Red_Header.webp" alt="choose-your-product"
+                    class="w-full h-60 hover:scale-105 duration-500" />
+                <div class="p-5 md:py-10 lg:pt-16 flex flex-col gap-2">
+                    <img loading="lazy" decoding="async" width="350" height="50"
+                        src="https://www.smart-floorings.com/wp-content/uploads/2024/10/7mm-Colour-Swatches.svg"
+                        class="size-full" alt="8-colours">
+                    <h3 class="text-base md:text-lg xl:text-xl font-semibold">
+
+                        E500 7mm Tiles Smooth
+                    </h3>
+                    <p>
+                        E500 7mm Tiles Smooth are smooth-surfaced tiles that are easy to adjust and install on any
+                        surface.
+
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="group relative w-full h-[400px] md:h-full overflow-hidden">
+                <img src="./images/product-card/Image-2-1.webp"
+                    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 duration-700 text-white text-2xl bg-orange-600/30" />
+                <div
+                    class="absolute inset-0 flex flex-col font-semibold items-center justify-center bg-black/30 group-hover:scale-105 duration-500">
+                    <p class="block mt-4 text-base md:text-xl lg:text-2xl text-white text-center w-[80%]">
+                        Connect with our professionals to discover the best type of flooring for your space!
+                    </p>
+
+                    <div class="p-4 py-10">
+                        <div>
+                            <a href="#"
+                                class="relative requestQuoteBtn text-white bg-[#2B2A29] hover:bg-[#FFCC00] rounded-full transition-all duration-700  shadow-md shadow-[#FFCC00] px-7 py-3 text-sm md:text-lg overflow-hidden">
+                                Request A Quote</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- Why Us-Section -->
+    <section class="p-5 md:p-10 ">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-stretch py-5 md:py-10">
+
+            <!-- Card-1 -->
+            <div class="flex flex-col gap-3 border-b pb-5 md:pb-10">
+                <hr class="w-full md:w-1/6 h-1 my-2 bg-[#FFCC00]">
+                <p class="text-[#FFCC00] text-lg md:text-xl md:pt-5 md:px-5 uppercase">Why Us?</p>
+
+                <h2 class="text-2xl lg:text-3xl xl:text-4xl font-semibold md:px-5">
+                    Discover the brilliance
+                </h2>
+
+                <p class="md:px-5 pb-5">
+                    Get the best interlocking floor tiles in Europe for industrial as well as non-industrial settings
+                    that
+                    will elevate your space. It comes with simple, interruption-free installs, exceptional lifespan,
+                    little
+                    maintenance, and other useful features.
+                </p>
+
+                <a href="/about-us">
+                    <span
+                        class="relative w-full text-base md:text-lg text-left p-2 px-4 md:mx-5 bg-[#FFCC00] text-white hover:text-black transition-colors duration-700 ease-in-out ">
+                        View More <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </div>
+
+            <!-- Card-2 -->
+            <div class="p-5 md:p-10 lg:p-16 flex flex-col gap-2 object-cover object-center"
+                style="background-image: url('./images/bg-image/service-bg.webp');">
+                <div class="flex flex-col md:flex-row-reverse gap-5 md:gap-10 justify-center items-center">
+                    <img src="./images/icons/burning-house.png" alt="fire retardation">
+                    <div class="flex flex-col gap-3">
+                        <h3 class="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
+                            Fire Retardant
+                        </h3>
+                        <p>
+                            You can protect your space with our fire-retardant flooring. It provides peace of mind &
+                            safety
+                            without compromising on style or functionality.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card-3 -->
+            <div class="p-5 md:p-10 lg:p-16 flex flex-col gap-2 object-cover object-center"
+                style="background-image: url('./images/bg-image/service-bg.webp');">
+                <div class="flex flex-col md:flex-row-reverse gap-5 md:gap-10 justify-center items-center">
+                    <img src="./images/icons/test-tube.png" alt="chemical-resistant">
+                    <div class="flex flex-col gap-3">
+                        <h3 class="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
+                            Chemical Resistant
+                        </h3>
+                        <p>
+                            Our chemical-resistant flooring solutions is one of the most durable & long-lasting options.
+                            These tiles can withstand even the toughest chemicals and spills.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card-4 -->
+            <div class="p-5 md:p-10 lg:p-16 flex flex-col gap-2 object-cover object-center"
+                style="background-image: url('./images/bg-image/service-bg.webp');">
+                <div class="flex flex-col md:flex-row-reverse gap-5 md:gap-10 justify-center items-center">
+                    <img src="./images/icons/hammer.png" alt="hammer">
+                    <div class="flex flex-col gap-3">
+                        <h3 class="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
+                            Extremely Hard Wearing
+                        </h3>
+                        <p>
+                            We offer the ultimate durability with our extremely hard-wearing flooring in Europe. Our
+                            specially designed tiles are built to withstand heavy foot traffic and maintain their
+                            pristine condition for years.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card-5 -->
+            <div class="p-5 md:p-10 lg:p-16 flex flex-col gap-2 object-cover object-center"
+                style="background-image: url('./images/bg-image/service-bg.webp');">
+                <div class="flex flex-col md:flex-row-reverse gap-5 md:gap-10 justify-center items-center">
+                    <img src="./images/icons/foot.png" alt="anti-slip">
+                    <div class="flex flex-col gap-3">
+                        <h3 class="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
+                            Anti-Slip
+                        </h3>
+                        <p>
+                            You can ensure a safe and accident-free environment with our anti-slip flooring feature.
+                            These tiles provide excellent traction and peace of mind for you and your loved ones.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card-6 -->
+            <div class="p-5 md:p-10 lg:p-16 flex flex-col gap-2 object-cover object-center"
+                style="background-image: url('./images/bg-image/service-bg.webp');">
+                <div class="flex flex-col md:flex-row-reverse gap-5 md:gap-10 justify-center items-center">
+                    <img src="./images/icons/sheets.png" alt="easy-installation">
+                    <div class="flex flex-col gap-3">
+                        <h3 class="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
+                            Easy Installation
+                        </h3>
+                        <p>
+                            If you want to enjoy a hassle-free experience, our effortless installation flooring options
+                            are designed to save you time & effort while achieving a flawless finish.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card-7 -->
+            <div class="p-5 md:p-10 lg:p-16 flex flex-col gap-2 object-cover object-center"
+                style="background-image: url('./images/bg-image/service-bg.webp');">
+                <div class="flex flex-col md:flex-row-reverse gap-5 md:gap-10 justify-center items-center">
+                    <img src="./images/icons/load-cargo.png" alt="ideal-for-heavy-loads">
+                    <div class="flex flex-col gap-3">
+                        <h3 class="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
+                            Ideal for Heavy Loads
+                        </h3>
+                        <p>
+                            Our flooring solutions are the best for heavy loads. Their strength and resilience support
+                            equipment & machinery without compromising performance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card-8 -->
+            <div class="p-5 md:p-10 lg:p-16 flex flex-col gap-2 object-cover object-center"
+                style="background-image: url('./images/bg-image/service-bg.webp');">
+                <div class="flex flex-col md:flex-row-reverse gap-5 md:gap-10 justify-center items-center">
+                    <img src="./images/icons/delivery-cost.png" alt="cost-effective">
+                    <div class="flex flex-col gap-3">
+                        <h3 class="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
+                            Cost Effective
+                        </h3>
+                        <p>
+                            We have cost-effective flooring solutions that provide exceptional quality, style,
+                            durability, etc. Smart Floorings ensures you get the best value for your investment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Some of our applications Section -->
+    <section class="p-5 md:p-10">
+        <hr class="w-full md:w-1/6 h-1 my-2 bg-[#FFCC00]">
+        <div class="flex flex-col gap-3 border-b md:p-5">
+            <p class="text-[#FFCC00] text-lg md:text-xl uppercase">Some of our applications</p>
+            <h2 class="text-2xl lg:text-3xl xl:text-4xl font-semibold">Industrial and Commercial Flooring
+                Solutions
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-0 items-stretch py-5 md:py-10">
+
+            <!-- fig-1 -->
+            <figure
+                class="group relative overflow-hidden bg-gradient-to-t from-black via-black to-transparent text-center">
+                <!-- Image Section -->
+                <img src="./images/applications/Industrial-Flooring-min.webp" alt="industrial-flooring"
+                    class="relative block min-h-full w-[120%] opacity-80 transition-transform duration-500 ease-in-out group-hover:opacity-60 object-cover" />
+
+                <!-- Caption with Header and Button -->
+                <figcaption
+                    class="opacity-0 translate-y-full group-hover:translate-y-0 bg-black bg-opacity-50 absolute inset-0 flex flex-col gap-5 justify-center items-center text-white uppercase text-base md:text-lg transition-all duration-700 ease-in-out group-hover:opacity-100 p-5">
+
+                    <h4
+                        class="text-lg md:text-xl font-semibold transition-transform duration-500 ease-in-out transform group-hover:-translate-y-2 group-hover:scale-105 group-hover:shadow-lg">
+                        Industrial Flooring
+                    </h4>
+                    <p
+                        class="text-sm ease-in-out transform group-hover:-translate-y-2 group-hover:scale-105 group-hover:shadow-lg">
+                        Our range of industrial flooring solutions is specially engineered to withstand heavy use and
+                        provide a safe
+                        & functional environment.
+                    </p>
+                </figcaption>
+
+                <!-- Right Arrow -->
+                <a href="/industrial-flooring"
+                    class="absolute bottom-0 right-0 text-white text-xl bg-[#434242] bg-opacity-50 p-5 transition-transform duration-500 ease-in-out hover:scale-110">
+                    <i class="fa fa-arrow-right text-yellow-500 text-3xl" aria-hidden="true"></i>
+                </a>
+            </figure>
+
+            <!-- fig-2 -->
+            <figure
+                class="group relative overflow-hidden bg-gradient-to-t from-black via-black to-transparent text-center">
+                <!-- Image Section -->
+                <img src="./images/applications/Labs-Office-Flooring-min.webp" alt="labs-office-flooring"
+                    class="relative block min-h-full w-[120%] opacity-80 transition-transform duration-500 ease-in-out group-hover:opacity-60 object-cover" />
+
+                <!-- Caption with Header and Button -->
+                <figcaption
+                    class="opacity-0 translate-y-full group-hover:translate-y-0 bg-black bg-opacity-50 absolute inset-0 flex flex-col gap-5 justify-center items-center text-white uppercase text-base md:text-lg transition-all duration-700 ease-in-out group-hover:opacity-100 p-5">
+
+                    <h4
+                        class="text-lg md:text-xl font-semibold transition-transform duration-500 ease-in-out transform group-hover:-translate-y-2 group-hover:scale-105 group-hover:shadow-lg">
+                        Labs & Office Flooring
+                    </h4>
+                    <p
+                        class="text-sm ease-in-out transform group-hover:-translate-y-2 group-hover:scale-105 group-hover:shadow-lg">
+                        Smart Flooring’s labs and office flooring solutions provide a professional environment that
+                        aligns with your organization’s theme.
+                    </p>
+                </figcaption>
+
+                <!-- Right Arrow -->
+                <a href="/labs-office-flooring"
+                    class="absolute bottom-0 right-0 text-white text-xl bg-[#434242] bg-opacity-50 p-5 transition-transform duration-500 ease-in-out hover:scale-110">
+                    <i class="fa fa-arrow-right text-yellow-500 text-3xl" aria-hidden="true"></i>
+                </a>
+            </figure>
+
+            <!-- fig-3 -->
+            <figure
+                class="group relative overflow-hidden bg-gradient-to-t from-black via-black to-transparent text-center">
+                <!-- Image Section -->
+                <img src="./images/applications/Garage-Flooring-min.webp" alt="garage-flooring"
+                    class="relative block min-h-full w-[120%] opacity-80 transition-transform duration-500 ease-in-out group-hover:opacity-60 object-cover" />
+
+                <!-- Caption with Header and Button -->
+                <figcaption
+                    class="opacity-0 translate-y-full group-hover:translate-y-0 bg-black bg-opacity-50 absolute inset-0 flex flex-col gap-5 justify-center items-center text-white uppercase text-base md:text-lg transition-all duration-700 ease-in-out group-hover:opacity-100 p-5">
+
+                    <h4
+                        class="text-lg md:text-xl font-semibold transition-transform duration-500 ease-in-out transform group-hover:-translate-y-2 group-hover:scale-105 group-hover:shadow-lg">
+                        Garage Flooring
+                    </h4>
+                    <p
+                        class="text-sm ease-in-out transform group-hover:-translate-y-2 group-hover:scale-105 group-hover:shadow-lg">
+                        We offer durable garage flooring options designed to withstand heavy use, resist stains, and
+                        enhance the overall look of your garage.
+
+
+                    </p>
+                </figcaption>
+
+                <!-- Right Arrow -->
+                <a href="/garage-flooring"
+                    class="absolute bottom-0 right-0 text-white text-xl bg-[#434242] bg-opacity-50 p-5 transition-transform duration-500 ease-in-out hover:scale-110">
+                    <i class="fa fa-arrow-right text-yellow-500 text-3xl" aria-hidden="true"></i>
+                </a>
+            </figure>
+
+            <!-- fig-4 -->
+            <figure
+                class="group relative overflow-hidden bg-gradient-to-t from-black via-black to-transparent text-center">
+                <!-- Image Section -->
+                <img src="./images/applications/Showroom-Flooring-min.webp" alt="industrial-flooring"
+                    class="relative block min-h-full w-[120%] opacity-80 transition-transform duration-500 ease-in-out group-hover:opacity-60 object-cover" />
+
+                <!-- Caption with Header and Button -->
+                <figcaption
+                    class="opacity-0 translate-y-full group-hover:translate-y-0 bg-black bg-opacity-50 absolute inset-0 flex flex-col gap-5 justify-center items-center text-white uppercase text-base md:text-lg transition-all duration-700 ease-in-out group-hover:opacity-100 p-5">
+
+                    <h4
+                        class="text-lg md:text-xl font-semibold transition-transform duration-500 ease-in-out transform group-hover:-translate-y-2 group-hover:scale-105 group-hover:shadow-lg">
+                        Showroom Flooring
+                    </h4>
+                    <p
+                        class="text-sm ease-in-out transform group-hover:-translate-y-2 group-hover:scale-105 group-hover:shadow-lg">
+                        Our showroom flooring solutions are specifically crafted to create a captivating space that
+                        entices customers with its impressive visual appeal.
+                    </p>
+                </figcaption>
+
+                <!-- Right Arrow -->
+                <a href="/showroom-flooring"
+                    class="absolute bottom-0 right-0 text-white text-xl bg-[#434242] bg-opacity-50 p-5 transition-transform duration-500 ease-in-out hover:scale-110">
+                    <i class="fa fa-arrow-right text-yellow-500 text-3xl" aria-hidden="true"></i>
+                </a>
+            </figure>
+
+            <!-- fig-5 -->
+            <figure
+                class="group relative overflow-hidden bg-gradient-to-t from-black via-black to-transparent text-center">
+                <!-- Image Section -->
+                <img src="./images/applications/Warehouse-Flooring-min-1.webp" alt="warehouse-flooring"
+                    class="relative block min-h-full w-[120%] opacity-80 transition-transform duration-500 ease-in-out group-hover:opacity-60 object-cover" />
+
+                <!-- Caption with Header and Button -->
+                <figcaption
+                    class="opacity-0 translate-y-full group-hover:translate-y-0 bg-black bg-opacity-50 absolute inset-0 flex flex-col gap-5 justify-center items-center text-white uppercase text-base md:text-lg transition-all duration-700 ease-in-out group-hover:opacity-100 p-5">
+
+                    <h4
+                        class="text-lg md:text-xl font-semibold transition-transform duration-500 ease-in-out transform group-hover:-translate-y-2 group-hover:scale-105 group-hover:shadow-lg">
+                        Warehouse Flooring
+                    </h4>
+                    <p
+                        class="text-sm ease-in-out transform group-hover:-translate-y-2 group-hover:scale-105 group-hover:shadow-lg">
+                        We meet the needs of industrial environments, offering exceptional durability, easy maintenance,
+                        and optimal safety with our warehouse flooring solutions.
+                    </p>
+                </figcaption>
+
+                <!-- Right Arrow -->
+                <a href="/warehouse-flooring"
+                    class="absolute bottom-0 right-0 text-white text-xl bg-[#434242] bg-opacity-50 p-5 transition-transform duration-500 ease-in-out hover:scale-110">
+                    <i class="fa fa-arrow-right text-yellow-500 text-3xl" aria-hidden="true"></i>
+                </a>
+            </figure>
+
+            <!-- fig-6 -->
+            <figure
+                class="group relative overflow-hidden bg-gradient-to-t from-black via-black to-transparent text-center">
+                <!-- Image Section -->
+                <img src="./images/applications/Sports-Gymn-min-1.webp" alt="sports & gym"
+                    class="relative block min-h-full w-[120%] opacity-80 transition-transform duration-500 ease-in-out group-hover:opacity-60 object-cover" />
+
+                <!-- Caption with Header and Button -->
+                <figcaption
+                    class="opacity-0 translate-y-full group-hover:translate-y-0 bg-black bg-opacity-50 absolute inset-0 flex flex-col gap-5 justify-center items-center text-white uppercase text-base md:text-lg transition-all duration-700 ease-in-out group-hover:opacity-100 p-5">
+
+                    <h4
+                        class="text-lg md:text-xl font-semibold transition-transform duration-500 ease-in-out transform group-hover:-translate-y-2 group-hover:scale-105 group-hover:shadow-lg">
+                        Sports & Gymn
+                    </h4>
+                    <p
+                        class="text-sm ease-in-out transform group-hover:-translate-y-2 group-hover:scale-105 group-hover:shadow-lg">
+                        The sports and gym flooring options from Smart Flooring provide superior shock absorption, slip
+                        resistance, and durability, ensuring a safe environment.
+                    </p>
+                </figcaption>
+
+                <!-- Right Arrow -->
+                <a href="/sports-gym"
+                    class="absolute bottom-0 right-0 text-white text-xl bg-[#434242] bg-opacity-50 p-5 transition-transform duration-500 ease-in-out hover:scale-110">
+                    <i class="fa fa-arrow-right text-yellow-500 text-3xl" aria-hidden="true"></i>
+                </a>
+            </figure>
+
+            <!-- fig-7 -->
+            <figure
+                class="group relative overflow-hidden bg-gradient-to-t from-black via-black to-transparent text-center">
+                <!-- Image Section -->
+                <img src="./images/applications/Retail-Commercial-Flooring-min.webp" alt="retail-commercial"
+                    class="relative block min-h-full w-[120%] opacity-80 transition-transform duration-500 ease-in-out group-hover:opacity-60 object-cover" />
+
+                <!-- Caption with Header and Button -->
+                <figcaption
+                    class="opacity-0 translate-y-full group-hover:translate-y-0 bg-black bg-opacity-50 absolute inset-0 flex flex-col gap-5 justify-center items-center text-white uppercase text-base md:text-lg transition-all duration-700 ease-in-out group-hover:opacity-100 p-5">
+
+                    <h4
+                        class="text-lg md:text-xl font-semibold transition-transform duration-500 ease-in-out transform group-hover:-translate-y-2 group-hover:scale-105 group-hover:shadow-lg">
+                        Retail & Commercial
+                    </h4>
+                    <p
+                        class="text-sm ease-in-out transform group-hover:-translate-y-2 group-hover:scale-105 group-hover:shadow-lg">
+                        Smart Flooring’s versatile retail & commercial flooring options combine durability, style, and
+                        functionality.
+                    </p>
+                </figcaption>
+
+                <!-- Right Arrow -->
+                <a href="/retail-commercial"
+                    class="absolute bottom-0 right-0 text-white text-xl bg-[#434242] bg-opacity-50 p-5 transition-transform duration-500 ease-in-out hover:scale-110">
+                    <i class="fa fa-arrow-right text-yellow-500 text-3xl" aria-hidden="true"></i>
+                </a>
+            </figure>
+
+            <!-- fig-8 -->
+            <figure
+                class="group relative overflow-hidden bg-gradient-to-t from-black via-black to-transparent text-center">
+                <!-- Image Section -->
+                <img src="./images/applications/Electrostatic-Dissipative-min-1.webp" alt="Electrostatic-Dissipative"
+                    class="relative block min-h-full w-[120%] opacity-80 transition-transform duration-500 ease-in-out group-hover:opacity-60 object-cover" />
+
+                <!-- Caption with Header and Button -->
+                <figcaption
+                    class="opacity-0 translate-y-full group-hover:translate-y-0 bg-black bg-opacity-50 absolute inset-0 flex flex-col gap-5 justify-center items-center text-white uppercase text-base md:text-lg transition-all duration-700 ease-in-out group-hover:opacity-100 p-5">
+
+                    <h4
+                        class="text-lg md:text-xl font-semibold transition-transform duration-500 ease-in-out transform group-hover:-translate-y-2 group-hover:scale-105 group-hover:shadow-lg">
+                        Electrostatic Dissipative (ESD)
+                    </h4>
+                    <p
+                        class="text-sm ease-in-out transform group-hover:-translate-y-2 group-hover:scale-105 group-hover:shadow-lg">
+                        Protect sensitive equipment and electronics with our ESD flooring solutions, offering reliable
+                        static control and preventing damage from electrostatic discharge.
+                    </p>
+                </figcaption>
+
+                <!-- Right Arrow -->
+                <a href="/electrostatic-dissipative-esd-flooring"
+                    class="absolute bottom-0 right-0 text-white text-xl bg-[#434242] bg-opacity-50 p-5 transition-transform duration-500 ease-in-out hover:scale-110">
+                    <i class="fa fa-arrow-right text-yellow-500 text-3xl" aria-hidden="true"></i>
+                </a>
+            </figure>
+
+        </div>
+    </section>
+
+    <!-- Installation and customer service section -->
+    <section class="p-5 md:p-10 lg:pb-20">
+
+        <!-- part-1 -->
+        <div class="flex flex-col md:flex-row gap-4 items-start">
+            <div class=" md:p-5 flex flex-col gap-3 w-full md:w-2/3">
+                <h2 class="text-2xl lg:text-3xl xl:text-4xl font-semibold">Professional Installation & Outstanding
+                    Customer Service
+                </h2>
+                <p class="text-left pb-5">
+                    It may be difficult to select the ideal flooring and guarantee faultless installation services. You
+                    can be confident that our team of professionals will help you at every step of the way.
+                    <br />
+                    <br />
+                    You can count on our experienced team to assist you in choosing the best flooring solutions in any
+                    European city. You can achieve an easy-to-maintain finish with our expert installation services. We
+                    go the extra mile to deliver exceptional customer service and support throughout your experience
+                    with us because we commit to customer satisfaction.
+                </p>
+            </div>
+
+            <div class="flex justify-center wow py-5 w-full md:w-1/3" data-wow-duration="1500ms">
+                <img src="./images/process/Refuse-vehicle-on-Ecotile.webp" alt="process" class="w-full h-full" />
+            </div>
+        </div>
+
+        <!-- part-2 -->
+        <div class="flex flex-col md:flex-row gap-4 items-start">
+            <div class=" md:p-5 flex flex-col gap-3 w-full md:w-2/3">
+                <h2 class="text-2xl lg:text-3xl xl:text-4xl font-semibold">Pick Us for Our Unmatched Performance and
+                    Resilience
+                </h2>
+                <p class="text-left pb-5">
+                    Longevity is our first priority at Smart Flooring. Our ecotile flooring solutions are designed to
+                    offer outstanding performance and longevity because of this. We provide Flooring that is
+                    long-lasting with our innovative interlocking tile alternatives. Our intelligent flooring and tiles
+                    can withstand dampness, stains, wear, and scratches, making them ideal for high-traffic areas. You
+                    can have beautiful-looking flooring that can withstand the rigors of daily life with Smart Flooring.
+                </p>
+            </div>
+
+            <div class="flex justify-center wow py-5 w-full md:w-1/3" data-wow-duration="1500ms">
+                <img src="./images/process/icons8-leaf-100.png" alt="about-us"
+                    class="w-[70%] h-[70%] border-2 border-black p-10 rounded-full" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact-Us Section -->
+    <section class="flex flex-col md:flex-row gap-10 mx-auto bg-black text-white py-10 px-5 md:px-20">
+
+        <!-- Address-section -->
+        <div class="w-full md:w-1/2 flex flex-col gap-3">
+            <span class="text-[#1FCBA9] text-xl">write to us</span>
+            <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold">
+                CONTACT <span class="text-[#FECC09]">US.</span>
+            </h3>
+            <p class="text-2xl md:text-3xl lg:text-4xl font-semibold">
+                Wanting a showcase with a lasting impact! <span class="text-[#FECC09]">Catch-up with us</span>
+            </p>
+            <ul class="flex flex-col gap-5 py-5">
+                <li class="flex gap-3 items-center">
+                    <i class="fa fa-phone fa-2x bg-[#FECC09] rounded-full px-4 py-3" aria-hidden="true"></i>
+                    <div>
+                        <a href="tel:+48616255501" class="hover:text-[#FECC09] text-lg">+48 616 255501</a>
+                        <p class="text-[#FECC09] font-semibold">Call Us</p>
+                    </div>
+                </li>
+                <li class="flex gap-3 items-center">
+                    <i class="fa fa-envelope fa-2x bg-[#FECC09] rounded-full px-3 py-3" aria-hidden="true"></i>
+                    <div>
+                        <a href="mailto:enquiry@smart-floorings.com" target="_blank"
+                            class="hover:text-[#FECC09] text-lg">
+                            enquiry@smart-floorings.com
+                        </a>
+                        <p class="text-[#FECC09] font-semibold">Write Us</p>
+                    </div>
+                </li>
+                <li class="flex gap-3 items-center">
+                    <i class="fa fa-map-marker fa-2x bg-[#FECC09] rounded-full px-5 py-3" aria-hidden="true"></i>
+                    <div>
+                        Akazienstraße 3A, Berlin, Germany - 10823
+                        <p class="text-[#FECC09] font-semibold">Visit Us</p>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="flex gap-2 items-center">
+                <a href="https://www.facebook.com/messemasters/" target="_blank">
+                    <i class="fa fa-facebook-square fa-3x hover:opacity-70 hover:scale-105 duration-500"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/messemasters/" target="_blank">
+                    <i class="fa fa-linkedin-square fa-3x hover:opacity-70 hover:scale-105 duration-500"></i>
+                </a>
+                <a href="https://www.instagram.com/messemasters/" target="_blank">
+                    <i class="fa fa-instagram fa-3x hover:opacity-70 hover:scale-105 duration-500"></i>
+                </a>
+                <a href="https://x.com/i/flow/login?redirect_after_login=%2Fmessemasters" target="_blank">
+                    <i
+                        class="fa fa-twitter fa-2x hover:opacity-70 hover:scale-105 duration-500 bg-white text-black px-2 py-1 rounded-md"></i>
+                </a>
+                <a href="https://de.pinterest.com/messemasters/" target="_blank">
+                    <i
+                        class="fa fa-pinterest fa-2x hover:opacity-70 hover:scale-105 duration-500 bg-white text-black px-2 py-1 rounded-md"></i>
+                </a>
+                <a href="https://www.tumblr.com/messemasters" target="_blank">
+                    <i
+                        class="fa fa-tumblr fa-2x hover:opacity-70 hover:scale-105 duration-500 bg-white text-black px-3 py-1 rounded-md"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Form-Section -->
+        <div class=" w-full md:w-1/2 bg-white text-black p-3 md:p-6 rounded-lg shadow-lg">
+            <form id="contact-form" action="/submit" method="POST" enctype="multipart/form-data">
+                <!-- First Row -->
+                <div class="flex flex-col md:flex-row gap-4">
+                    <div class="w-full">
+                        <div class="relative mt-1">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                                <i class="fa fa-user-o" aria-hidden="true"></i>
+                            </span>
+                            <input id="name" name="quform_1_16" type="text" placeholder="Name" required
+                                class="block w-full pl-8 pr-3 py-2 border-2 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <div class="relative mt-1">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            </span>
+                            <input id="phone" name="quform_1_17" type="tel" placeholder="Phone Number" required
+                                class="block w-full pl-8 pr-3 py-2 border-2 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Second Row -->
+                <div class="flex flex-col md:flex-row gap-4 mt-4">
+                    <div class="w-full">
+                        <div class="relative mt-1">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                                <i class="fa fa-envelope-o"></i>
+                            </span>
+                            <input id="email" name="quform_1_8" type="email" placeholder="Email" required
+                                class="block w-full pl-8 pr-3 py-2 border-2  border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Third Row -->
+                <div class="flex flex-col md:flex-row gap-4 mt-4">
+                    <div class="w-full">
+                        <div class="relative mt-1">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                                <i class="fa fa-building-o" aria-hidden="true"></i>
+                            </span>
+                            <input id="company" name="quform_1_18" type="text" placeholder="Company Name" required
+                                class="block w-full pl-8 pr-3 py-2 border-2 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <div class="relative mt-1">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                                <i class="fa fa-gift"></i>
+                            </span>
+                            <input id="execution" name="quform_1_21" type="text" placeholder="Approximate Floor Area"
+                                required
+                                class="block w-full pl-8 pr-3 py-2 border-2 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Browse Button -->
+                <!-- <div class="mt-4">
+                    <input id="file" name="quform_1_24[]" type="file" accept=".jpg,.jpeg,.png,.pdf"
+                        class="file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-[#FECC09] file:text-white hover:file:bg-[#fc8143] cursor-pointer" />
+                </div> -->
+
+                <!-- Message Section -->
+                <div class="mt-4">
+                    <textarea id="message" name="quform_1_29" rows="4" required
+                        class="mt-1 p-2 block w-full border-2 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                        placeholder="Message..."></textarea>
+                </div>
+
+
+                <!-- Radio Button Section -->
+                <div class="mt-4 p-2 border-2 border-gray-300 rounded-md shadow-sm ">
+                    <div class="flex items-center gap-4">
+                        <div class="flex gap-2">
+                            <input id="callback" name="contact_method" type="radio" value="callback" required
+                                class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500" />
+                            <label for="callback" class="ml-2 block text-sm text-gray-700">I'd like a callback</label>
+                        </div>
+                        <div class="flex gap-2">
+                            <input id="email" name="contact_method" type="radio" value="email"
+                                class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500" />
+                            <label for="email" class="ml-2 block text-sm text-gray-700">I'd like to be emailed</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Captcha and Send Button -->
+
+                <div class="flex flex-col md:flex-row gap-4 mt-4">
+                    <div class="mt-4 w-full flex flex-col gap-2">
+                        <input id="captcha-new" name="quform_2_28" type="text" placeholder="Please type the character"
+                            required
+                            class="block w-full pl-3 pr-3 py-2 border-2 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" />
+                        <div id="captcha-text-new"
+                            class="w-fit bg-white border-2 border-gray-300 rounded-md shadow-sm opacity-65 hover:opacity-100 duration-500 text-[#434242] text-center py-1.5 px-4 text-lg font-semibold">
+                        </div>
+                    </div>
+                    <div class="mt-4 w-full">
+                        <button type="submit" aria-label="Submit form"
+                            class="w-full py-2 px-4 bg-[#434242] text-white rounded-md shadow-md hover:bg-[#FECC09] focus:ring-2 focus:ring-[#f88234] focus:ring-offset-2">
+                            Send
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- Counter - section -->
+    <section id="counter-section">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-5 md:px-10 bg-[#FECC09]">
+            <div
+                class="flex flex-col justify-center text-center shadow-md shadow-black hover:scale-95 duration-500 py-3 backdrop-blur-lg rounded-3xl">
+                <div class="flex justify-center items-end py-3">
+                    <div class="counter text-2xl md:text-3xl lg:text-4xl font-bold" data-target="
+                    786">
+
+                    </div>
+                    <span class="text-3xl font-semibold">+</span>
+                </div>
+                <span class="text-base md:text-lg text-white uppercase">
+                    Happy Clients</span>
+            </div>
+            <div
+                class="flex flex-col justify-center text-center shadow-md shadow-black hover:scale-95 duration-500 py-3 backdrop-blur-lg rounded-3xl">
+                <div class="flex justify-center items-center py-3">
+                    <div class="counter text-2xl md:text-3xl lg:text-4xl font-semibold" data-target="600
+                    ">
+                    </div>
+                    <span class="text-3xl font-semibold">+</span>
+                </div>
+                <span class="text-base md:text-lg text-white uppercase">export Worldwide</span>
+            </div>
+            <div
+                class="flex flex-col justify-center text-center shadow-md shadow-black hover:scale-95 duration-500 py-3 backdrop-blur-lg rounded-3xl">
+                <div class="flex justify-center items-center py-3">
+                    <div class="counter text-2xl md:text-3xl lg:text-4xl font-semibold" data-target="989">
+                    </div>
+                    <span class="text-3xl font-semibold">+</span>
+                </div>
+                <span class="text-base md:text-lg text-white uppercase">amazing projects</span>
+            </div>
+            <div
+                class="flex flex-col justify-center text-center shadow-md shadow-black hover:scale-95 duration-500 py-3 backdrop-blur-lg rounded-3xl">
+                <div class="flex justify-center items-center py-3">
+                    <div class="counter text-2xl md:text-3xl lg:text-4xl font-semibold" data-target="125
+                    ">
+                    </div>
+                    <span class="text-3xl font-semibold">+</span>
+                </div>
+                <span class="text-base md:text-lg text-white uppercase">production plan</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ's - Section -->
+    <section class="p-5 md:p-10 lg:pt-20">
+        <hr class="w-full md:w-1/6 h-1 my-2 bg-[#FFCC00]">
+        <div class="flex flex-col gap-3 border-b">
+            <p class="text-[#FFCC00] text-lg md:text-xl md:p-5 md:pb-0 uppercase">FAQ's</p>
+            <div class="flex flex-col md:flex-row gap-10 justify-between items-start md:items-center">
+                <h2 class="text-2xl lg:text-3xl xl:text-4xl font-semibold md:p-5">Frequently Asked Questions</h2>
+                <a href="/about-us">
+                    <span
+                        class="relative w-full text-base md:text-lg text-left p-4 bg-black hover:bg-[#FFCC00] text-white transition-colors duration-700 ease-in-out">
+                        View More <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <div class="flex flex-col gap-5 py-5 md:py-10" id="faq-section">
+            <!-- FAQ Items -->
+            <div class="faq-item border-b pb-3">
+                <h3
+                    class="text-lg md:text-xl lg:text-2xl font-semibold flex justify-between items-center cursor-pointer">
+                    What types of flooring products does Smart Floorings offer?
+                    <span class="plus-icon">+</span>
+                </h3>
+                <p class="faq-content hidden text-[#636363] pt-5">We offer a range of flooring options, including E500
+                    7mm
+                    Raised Disc, E500
+                    7mm Tiles Smooth, ESD/Anti-Static Flooring, R500 Recycled Floor Tile, customizable tiles, and more,
+                    catering to various industrial needs with durability and longevity.
+                </p>
+            </div>
+
+            <div class="faq-item border-b pb-3">
+                <h3
+                    class="text-lg md:text-xl lg:text-2xl font-semibold flex justify-between items-center cursor-pointer">
+                    What are the key benefits of using your products in industrial settings?
+                    <span class="plus-icon">+</span>
+                </h3>
+                <p class="faq-content hidden text-[#636363] pt-5">Smart Flooring products offer superior durability,
+                    resistance to
+                    chemicals, abrasions, and heavy foot traffic, making them ideal for industrial spaces that require
+                    high-performance flooring solutions.
+                </p>
+            </div>
+
+            <div class="faq-item border-b pb-3">
+                <h3
+                    class="text-lg md:text-xl lg:text-2xl font-semibold flex justify-between items-center cursor-pointer">
+                    What are ecotiles made of?
+                    <span class="plus-icon">+</span>
+                </h3>
+                <p class="faq-content hidden text-[#636363] pt-5">Ecotiles or eco-friendly tiles are made from various
+                    sustainable materials
+                    and processes. Most eco tiles are made of recycled materials, including discarded glass, ceramics,
+                    or even plastic waste. They get a second life as ecotiles, reducing landfill burdens and resource
+                    demands. Ecotiles are also made of renewable resources like cork, bamboo, reclaimed wood, or
+                    responsibly harvested clay, contributing to a greener footprint.
+                </p>
+            </div>
+
+            <div class="faq-item border-b pb-3">
+                <h3
+                    class="text-lg md:text-xl lg:text-2xl font-semibold flex justify-between items-center cursor-pointer">
+                    How does Smart Floorings support sustainability efforts in industries?
+                    <span class="plus-icon">+</span>
+                </h3>
+                <p class="faq-content hidden text-[#636363] pt-5">Our R500 Recycled Floor Tile is an eco-friendly option
+                    that utilizes
+                    recycled materials, contributing to sustainability while maintaining durability and performance in
+                    industrial spaces.
+                </p>
+            </div>
+
+            <div class="faq-item border-b pb-3">
+                <h3
+                    class="text-lg md:text-xl lg:text-2xl font-semibold flex justify-between items-center cursor-pointer">
+                    How is tile eco-friendly?
+                    <span class="plus-icon">+</span>
+                </h3>
+                <p class="faq-content hidden text-[#636363] pt-5">Tiles can be environmentally friendly in a number of
+                    ways. Several tiles
+                    are manufactured using energy-efficient methods, resulting in reduced emissions during production.
+                    High-quality tiles often require minimal cleaning with water. These tiles can also last for decades,
+                    minimizing replacements and waste generation. Ecotiles, which are often manufactured from recyclable
+                    materials, can be recycled at the end of their lifespan.
+                </p>
+            </div>
+
+            <div class="faq-item border-b pb-3">
+                <h3
+                    class="text-lg md:text-xl lg:text-2xl font-semibold flex justify-between items-center cursor-pointer">
+                    How do your flooring solutions contribute to employee well-being in industrial settings?
+                    <span class="plus-icon">+</span>
+                </h3>
+                <p class="faq-content hidden text-[#636363] pt-5">Our impact-resistant and ergonomic tile design reduces
+                    the risk of
+                    injuries and fatigue, promoting employee well-being and productivity in physically demanding work
+                    environments.
+                </p>
+            </div>
+
+            <div class="faq-item border-b pb-3">
+                <h3
+                    class="text-lg md:text-xl lg:text-2xl font-semibold flex justify-between items-center cursor-pointer">
+                    Are tiles good for the environment?
+                    <span class="plus-icon">+</span>
+                </h3>
+                <p class="faq-content hidden text-[#636363] pt-5">Some tiles, like ecotiles, are good for the
+                    environment as they are
+                    manufactured from recycled materials and sustainably sourced resources. Ecotiles are durable enough
+                    to last for decades and can easily be recycled at the end of their lives. However, traditional tiles
+                    are manufactured using materials and processes that can potentially harm the environment.
+                </p>
+            </div>
+
+            <div class="faq-item border-b pb-3">
+                <h3
+                    class="text-lg md:text-xl lg:text-2xl font-semibold flex justify-between items-center cursor-pointer">
+                    What are the advantages of rubber mats?
+                    <span class="plus-icon">+</span>
+                </h3>
+                <p class="faq-content hidden text-[#636363] pt-5">Rubber mats offer excellent durability, slip
+                    resistance, and shock
+                    absorption. They are commonly used in gyms, playgrounds, and industrial settings to provide safety,
+                    comfort, and protection.
+                </p>
+            </div>
+
+            <div class="faq-item border-b pb-3">
+                <h3
+                    class="text-lg md:text-xl lg:text-2xl font-semibold flex justify-between items-center cursor-pointer">
+                    What should I consider when choosing commercial-grade Flooring?
+                    <span class="plus-icon">+</span>
+                </h3>
+                <p class="faq-content hidden text-[#636363] pt-5">Factors to consider include durability, ease of
+                    maintenance, slip
+                    resistance, fire resistance, and the specific needs of the commercial space, such as high foot
+                    traffic or specialized requirements.
+                </p>
+            </div>
+
+            <div class="faq-item border-b pb-3">
+                <h3
+                    class="text-lg md:text-xl lg:text-2xl font-semibold flex justify-between items-center cursor-pointer">
+                    What industries does Smart Floorings cater to?
+                    <span class="plus-icon">+</span>
+                </h3>
+                <p class="faq-content hidden text-[#636363] pt-5">We provide solutions for a wide range of industries,
+                    including
+                    manufacturing, automotive, healthcare, retail, education, sports facilities, and more, offering
+                    durable and practical flooring options.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+    <script src="index.js" defer></script>
+
+
+</body>
+
+</html>
